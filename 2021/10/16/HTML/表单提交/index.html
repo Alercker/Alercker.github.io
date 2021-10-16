@@ -23,20 +23,20 @@
   <meta name="description" content="表单提交表单可以搜集用户的数据，并且可以把收集到的数据提交给后台。 1. 表单的属性设置form标签 表示表单标签，定义整体的表单区域 - action属性，设置表单数据提交地址(服务器的地址) - method属性，设置表单的提交方式，一般有GET和POST方式(不区分大小写)  2. 表单元素属性 name属性 设置表单元素的名称，该形成是提交数据时的参数名 value属性 设置表单元素的值，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="表单提交">
-<meta property="og:url" content="http://example.com/2021/10/16/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/index.html">
+<meta property="og:url" content="http://example.com/2021/10/16/HTML/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/index.html">
 <meta property="og:site_name" content="FZBlog">
 <meta property="og:description" content="表单提交表单可以搜集用户的数据，并且可以把收集到的数据提交给后台。 1. 表单的属性设置form标签 表示表单标签，定义整体的表单区域 - action属性，设置表单数据提交地址(服务器的地址) - method属性，设置表单的提交方式，一般有GET和POST方式(不区分大小写)  2. 表单元素属性 name属性 设置表单元素的名称，该形成是提交数据时的参数名 value属性 设置表单元素的值，">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2021/10/16/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/image-20211016130849589.png">
-<meta property="og:image" content="http://example.com/2021/10/16/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/image-20211016132209732.png">
+<meta property="og:image" content="http://example.com/2021/10/16/HTML/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/image-20211016130849589.png">
+<meta property="og:image" content="http://example.com/2021/10/16/HTML/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/image-20211016132209732.png">
 <meta property="article:published_time" content="2021-10-16T04:21:37.000Z">
 <meta property="article:modified_time" content="2021-10-16T05:24:07.041Z">
 <meta property="article:author" content="FZShen">
 <meta property="article:tag" content="HTML">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/10/16/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/image-20211016130849589.png">
+<meta name="twitter:image" content="http://example.com/2021/10/16/HTML/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/image-20211016130849589.png">
 
-<link rel="canonical" href="http://example.com/2021/10/16/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/">
+<link rel="canonical" href="http://example.com/2021/10/16/HTML/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/">
 
 
 <script id="page-configurations">
@@ -159,7 +159,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/16/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/16/HTML/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avastar.svg">
@@ -217,12 +217,12 @@
 
 
 
-<p><img src="/2021/10/16/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/image-20211016130849589.png" alt="image-20211016130849589"></p>
+<p><img src="/2021/10/16/HTML/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/image-20211016130849589.png" alt="image-20211016130849589"></p>
 <p>我们查看百度的包，可以看到密码等都是明文显示，get方式提交数据是以地址栏的方式提交给服务器，这种方式不安全，能够看到提交的数据严谨的说，是以查询参数的方式提交给web服务器.</p>
 <p>这种登录信息或者密码信息，不应该以get方式，而应采取post方式</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;https://www.baidu.com&quot;</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/2021/10/16/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/image-20211016132209732.png" alt="image-20211016132209732"></p>
+<p><img src="/2021/10/16/HTML/%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4/image-20211016132209732.png" alt="image-20211016132209732"></p>
 <p>POST方式提交表单数据，会放在请求体中，传输时会进行编码解码。</p>
 <p>但不论结果，GET和POST提交表单，都是基于<strong>HTTP</strong>协议进行的。</p>
 
@@ -244,10 +244,13 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/10/15/%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE/" rel="prev" title="表单标签">
+    <a href="/2021/10/15/HTML/%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE/" rel="prev" title="表单标签">
       <i class="fa fa-chevron-left"></i> 表单标签
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2021/10/16/CSS%E4%BB%8B%E7%BB%8D/" rel="next" title="CSS介绍">
+      CSS介绍 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -322,7 +325,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
