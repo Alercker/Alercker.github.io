@@ -177,7 +177,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-10-16 17:12:03 / 修改时间：17:56:08" itemprop="dateCreated datePublished" datetime="2021-10-16T17:12:03+08:00">2021-10-16</time>
+              <time title="创建时间：2021-10-16 17:12:03 / 修改时间：18:24:42" itemprop="dateCreated datePublished" datetime="2021-10-16T17:12:03+08:00">2021-10-16</time>
             </span>
 
           
@@ -200,7 +200,7 @@
 <h2 id="1-行内式"><a href="#1-行内式" class="headerlink" title="1. 行内式"></a>1. 行内式</h2><blockquote>
 <p>直接在标签的&lt;style&gt;属性中添加CSS样式。</p>
 </blockquote>
-<p><strong>示例代码</strong></p>
+<p><strong>示例代码：</strong></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;width:100px;height:100px;background:red&quot;</span>&gt;</span></span><br><span class="line">    hello</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>优点：方便、直观；</p>
@@ -208,9 +208,23 @@
 <h2 id="2-内嵌式"><a href="#2-内嵌式" class="headerlink" title="2. 内嵌式"></a>2. 内嵌式</h2><blockquote>
 <p>在&lt;head&gt;标签内加入&lt;style&gt;标签，在&lt;style&gt;标签内编写CSS代码。</p>
 </blockquote>
-<p>示例代码：</p>
+<p><strong>示例代码：</strong></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">    <span class="selector-tag">h3</span>&#123;</span></span><br><span class="line"><span class="css">        <span class="attribute">color</span>:red;</span></span><br><span class="line"><span class="css">    &#125;</span></span><br><span class="line"><span class="css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<p>优点：在同一个页面内便于复用和维护；</p>
+<p>缺点：多个页面之间的可复用性不高。</p>
+<h2 id="3-外链式"><a href="#3-外链式" class="headerlink" title="3. 外链式"></a>3. 外链式</h2><blockquote>
+<p>将CSS代码写在一个单独的CSS文件中，在&lt;head&gt;标签中使用&lt;link&gt;标签直接引入该文件到页面中。</p>
+</blockquote>
+<p><strong>示例代码</strong>：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;css/main.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>优点：使得CSS样式表与HTML页面分离，便于维护，复用性高；</p>
+<h2 id="4-方式选用"><a href="#4-方式选用" class="headerlink" title="4. 方式选用"></a>4. 方式选用</h2><ul>
+<li>行内式基本不用</li>
+<li>内嵌式学习时采用</li>
+<li>外链式开发时使用</li>
+</ul>
 
       
     </div>
@@ -255,7 +269,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-10-16 13:27:06 / 修改时间：15:44:33" itemprop="dateCreated datePublished" datetime="2021-10-16T13:27:06+08:00">2021-10-16</time>
+              <time title="创建时间：2021-10-16 13:27:06 / 修改时间：17:57:32" itemprop="dateCreated datePublished" datetime="2021-10-16T13:27:06+08:00">2021-10-16</time>
             </span>
 
           
@@ -269,10 +283,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="CSS介绍"><a href="#CSS介绍" class="headerlink" title="CSS介绍"></a>CSS介绍</h1><h2 id="1-CSS的定义"><a href="#1-CSS的定义" class="headerlink" title="1. CSS的定义"></a>1. CSS的定义</h2><p>CSS(Cascading Style Sheet)层叠样式表，它是用来美化页面的一种语言。</p>
-<p>html编写的网页就类似于画图的手稿，而CSS就是给手稿上色。</p>
-<h2 id="2-CSS的作用"><a href="#2-CSS的作用" class="headerlink" title="2. CSS的作用"></a>2. CSS的作用</h2><p>[1] 美化页面，比如设置标签文字大小、颜色、字体加粗等样式。</p>
+          <h1 id="CSS介绍"><a href="#CSS介绍" class="headerlink" title="CSS介绍"></a>CSS介绍</h1><h2 id="1-CSS的定义"><a href="#1-CSS的定义" class="headerlink" title="1. CSS的定义"></a>1. CSS的定义</h2><blockquote>
+<p>CSS(Cascading Style Sheet)层叠样式表，它是用来美化页面的一种语言。</p>
+</blockquote>
+<p>HTML编写的网页就类似于画图的手稿，而CSS就是给手稿上色。</p>
+<h2 id="2-CSS的作用"><a href="#2-CSS的作用" class="headerlink" title="2. CSS的作用"></a>2. CSS的作用</h2><blockquote>
+<p>[1] 美化页面，比如设置标签文字大小、颜色、字体加粗等样式。</p>
 <p>[2] 控制页面布局，比如设置浮动、定位等样式</p>
+</blockquote>
 <h2 id="3-CSS基本语法"><a href="#3-CSS基本语法" class="headerlink" title="3. CSS基本语法"></a>3. CSS基本语法</h2><p>CSS两个主要<strong>组成</strong>部分：<strong>选择器</strong>和一条/多条<strong>样式规则</strong>。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">选择器&#123;</span><br><span class="line">    样式规则</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">样式规则:</span><br><span class="line">    属性名<span class="number">1</span>:属性值<span class="number">1</span>;</span><br><span class="line">    属性名<span class="number">2</span>:属性值<span class="number">2</span>;</span><br><span class="line">    属性名<span class="number">3</span>:属性值<span class="number">3</span>;</span><br><span class="line">    属性名<span class="number">4</span>:属性值<span class="number">4</span>;</span><br><span class="line">	 ...</span><br></pre></td></tr></table></figure>
 
@@ -324,7 +342,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-10-16 12:21:37 / 修改时间：13:24:07" itemprop="dateCreated datePublished" datetime="2021-10-16T12:21:37+08:00">2021-10-16</time>
+              <time title="创建时间：2021-10-16 12:21:37 / 修改时间：17:59:08" itemprop="dateCreated datePublished" datetime="2021-10-16T12:21:37+08:00">2021-10-16</time>
             </span>
 
           
@@ -339,14 +357,19 @@
 
       
           <h1 id="表单提交"><a href="#表单提交" class="headerlink" title="表单提交"></a>表单提交</h1><p>表单可以搜集用户的数据，并且可以把收集到的数据提交给后台。</p>
-<h2 id="1-表单的属性设置"><a href="#1-表单的属性设置" class="headerlink" title="1. 表单的属性设置"></a>1. 表单的属性设置</h2><p>form标签 表示表单标签，定义整体的表单区域</p>
-<pre><code>- action属性，设置表单数据提交地址(服务器的地址)
-- method属性，设置表单的提交方式，一般有GET和POST方式(不区分大小写)
-</code></pre>
-<h2 id="2-表单元素属性"><a href="#2-表单元素属性" class="headerlink" title="2. 表单元素属性"></a>2. 表单元素属性</h2><ul>
+<h2 id="1-表单的属性设置"><a href="#1-表单的属性设置" class="headerlink" title="1. 表单的属性设置"></a>1. 表单的属性设置</h2><blockquote>
+<p>&lt;form&gt;标签 表示表单标签，定义整体的表单区域</p>
+<ul>
+<li>action属性，设置表单数据提交地址(服务器的地址)</li>
+<li>method属性，设置表单的提交方式，一般有GET和POST方式(不区分大小写)</li>
+</ul>
+</blockquote>
+<h2 id="2-表单元素属性"><a href="#2-表单元素属性" class="headerlink" title="2. 表单元素属性"></a>2. 表单元素属性</h2><blockquote>
+<ul>
 <li>name属性 设置表单元素的名称，该形成是提交数据时的参数名</li>
 <li>value属性 设置表单元素的值，该值是提交数据时参数名所对应的值</li>
 </ul>
+</blockquote>
 <h2 id="3-示例代码"><a href="#3-示例代码" class="headerlink" title="3. 示例代码"></a>3. 示例代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 使用表单标签将数据提交给Web服务器 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;https://www.baidu.com&quot;</span> <span class="attr">method</span>=<span class="string">&quot;get&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 普通的输入框使用input text --&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- for和后面的id相联用，点击这个label可以为下面的输入框设定光标 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;name&quot;</span>&gt;</span>用户名<span class="tag">&lt;/<span class="name">label</span>&gt;</span>    </span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;name&quot;</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 密码输入采用input password，使得输入不显示 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;pwd&quot;</span>&gt;</span>密码<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> <span class="attr">id</span>=<span class="string">&quot;pwd&quot;</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 单选框radio --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span>&gt;</span>性别<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;0&quot;</span>&gt;</span>男</span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;1&quot;</span>&gt;</span>女</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 多选框checkbox --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span>&gt;</span>爱好<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;hobby&quot;</span> <span class="attr">value</span>=<span class="string">&quot;0&quot;</span>&gt;</span>学习</span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;hobby&quot;</span> <span class="attr">value</span>=<span class="string">&quot;1&quot;</span>&gt;</span>读书</span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;hobby&quot;</span> <span class="attr">value</span>=<span class="string">&quot;2&quot;</span>&gt;</span>看报</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 上传文件file --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span>&gt;</span>照片<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">name</span>=<span class="string">&quot;file&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 大段文字使用textarea --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span>&gt;</span>个人描述<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">id</span>=<span class="string">&quot;des&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;30&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 下拉框使用select,option定义每一个键值 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span>&gt;</span>籍贯<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">&quot;position&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;0&quot;</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;1&quot;</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 提交表单按钮是submit,重置表单是reset,普通的按钮使用button --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;提交&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;reset&quot;</span> <span class="attr">value</span>=<span class="string">&quot;重置&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;按钮&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
@@ -773,7 +796,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-15 20:52:46" itemprop="dateModified" datetime="2021-10-15T20:52:46+08:00">2021-10-15</time>
+                <time title="修改时间：2021-10-16 18:01:02" itemprop="dateModified" datetime="2021-10-16T18:01:02+08:00">2021-10-16</time>
               </span>
 
           
@@ -790,10 +813,10 @@
           <h1 id="HTML的基本结构"><a href="#HTML的基本结构" class="headerlink" title="HTML的基本结构"></a>HTML的基本结构</h1><h2 id="1-组织结构"><a href="#1-组织结构" class="headerlink" title="1. 组织结构"></a>1. 组织结构</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span>								<span class="comment">&lt;!--文档声明--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span>						    	 <span class="comment">&lt;!--头部标签--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span>			<span class="comment">&lt;!--编码格式--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>网页标题<span class="tag">&lt;/<span class="name">title</span>&gt;</span>		</span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span>								  <span class="comment">&lt;!--内容标签--&gt;</span></span><br><span class="line">        网页显示内容</span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <ol>
-<li><strong>DOCTYPE html</strong>是文档的声明，用来指定页面所用的html版本，此处声明的是html5的文档。</li>
-<li><strong>html…/html</strong>是网页的开始和结束标签，一个html页面从html开始到/html结束。</li>
-<li><strong>head…/head</strong>是用于定义文档的头部，负责对网页进行设置标题、编码格式以及引入CSS和JS文件的。</li>
-<li><strong>body…/body</strong>是编写网页上显示的内容。</li>
+<li>**&lt;DOCTYPE html/&gt;**是文档的声明，用来指定页面所用的html版本，此处声明的是html5的文档。</li>
+<li>**&lt;html&gt;…&lt;/html&gt;**是网页的开始和结束标签，一个html页面从html开始到/html结束。</li>
+<li>**&lt;head&gt;…&lt;./head&gt;**是用于定义文档的头部，负责对网页进行设置标题、编码格式以及引入CSS和JS文件的。</li>
+<li>**&lt;body&gt;..&lt;./body&gt;**是编写网页上显示的内容。</li>
 </ol>
 <img src="/2021/10/12/HTML/HTML%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84/image-20211014183227627.png" alt="image-20211014183227627" style="zoom:50%;">
 
@@ -804,7 +827,8 @@
 
 
 
-<p><img src="/2021/10/12/HTML/HTML%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84/image-20211014183731362.png" alt="image-20211014183731362"></p>
+<img src="/2021/10/12/HTML/HTML%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84/image-20211014183731362.png" alt="image-20211014183731362" style="zoom: 67%;">
+
 <h2 id="4-实例网页代码"><a href="#4-实例网页代码" class="headerlink" title="4. 实例网页代码"></a>4. 实例网页代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 文档声明：HTML5的文档 --&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 当前网页语言为中文,英文=&gt;en，一般不指定 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;zh&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 指定网页编码格式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 自动选择IE最高版本 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 在移动设备浏览时，网页不缩放 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 网页的标题 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- html里面的注释快捷键：ctrl + / --&gt;</span></span><br><span class="line">    Hello</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
