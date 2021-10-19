@@ -20,22 +20,25 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"Available values":"flat","style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="&quot;Hello World&quot;  ​    这是我接触编程后第一个编写的程序，而今天我也第一次开通了博客，按照惯例， 1&quot;Hello World&quot;  ​    希望能通过这个博客记录自己学习的路程。 2021&#x2F;9&#x2F;24">
+  <meta name="description" content="盒子模型1. 盒子模型介绍 所谓的盒子模型，就是把HTML页面的元素看做一个矩形的盒子，矩形盒子是由内容（content）、内边距（padding）、边框（border）、外边距（margin）四个部分组成。  盒子模型示意图如下：  2. 相关样式属性 盒子的内容宽度（width），注意不是盒子的宽度 盒子的内容高度（height），注意不是盒子的高度 盒子的边框（border） 盒子内的内容和">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初行博客">
-<meta property="og:url" content="http://example.com/2021/09/24/HTML/%E5%88%9D%E8%A1%8C%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="盒子模型">
+<meta property="og:url" content="http://example.com/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/index.html">
 <meta property="og:site_name" content="FZBlog">
-<meta property="og:description" content="&quot;Hello World&quot;  ​    这是我接触编程后第一个编写的程序，而今天我也第一次开通了博客，按照惯例， 1&quot;Hello World&quot;  ​    希望能通过这个博客记录自己学习的路程。 2021&#x2F;9&#x2F;24">
+<meta property="og:description" content="盒子模型1. 盒子模型介绍 所谓的盒子模型，就是把HTML页面的元素看做一个矩形的盒子，矩形盒子是由内容（content）、内边距（padding）、边框（border）、外边距（margin）四个部分组成。  盒子模型示意图如下：  2. 相关样式属性 盒子的内容宽度（width），注意不是盒子的宽度 盒子的内容高度（height），注意不是盒子的高度 盒子的边框（border） 盒子内的内容和">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2021/09/24/HTML/%E5%88%9D%E8%A1%8C%E5%8D%9A%E5%AE%A2/hw.jpg">
-<meta property="article:published_time" content="2021-09-24T09:02:31.000Z">
-<meta property="article:modified_time" content="2021-09-24T09:50:58.507Z">
+<meta property="og:image" content="http://example.com/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20211019210649793.png">
+<meta property="og:image" content="http://example.com/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20211019214637308.png">
+<meta property="og:image" content="http://example.com/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20211019214727642.png">
+<meta property="og:image" content="http://example.com/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20211019214824333.png">
+<meta property="article:published_time" content="2021-10-19T12:47:42.000Z">
+<meta property="article:modified_time" content="2021-10-19T13:49:18.261Z">
 <meta property="article:author" content="FZShen">
-<meta property="article:tag" content="随手">
+<meta property="article:tag" content="CSS">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/09/24/HTML/%E5%88%9D%E8%A1%8C%E5%8D%9A%E5%AE%A2/hw.jpg">
+<meta name="twitter:image" content="http://example.com/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20211019210649793.png">
 
-<link rel="canonical" href="http://example.com/2021/09/24/HTML/%E5%88%9D%E8%A1%8C%E5%8D%9A%E5%AE%A2/">
+<link rel="canonical" href="http://example.com/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/">
 
 
 <script id="page-configurations">
@@ -48,7 +51,7 @@
   };
 </script>
 
-  <title>初行博客 | FZBlog</title>
+  <title>盒子模型 | FZBlog</title>
   
 
 
@@ -158,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/24/HTML/%E5%88%9D%E8%A1%8C%E5%8D%9A%E5%AE%A2/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avastar.svg">
@@ -171,7 +174,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          初行博客
+          盒子模型
         </h1>
 
         <div class="post-meta">
@@ -182,7 +185,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-09-24 17:02:31 / 修改时间：17:50:58" itemprop="dateCreated datePublished" datetime="2021-09-24T17:02:31+08:00">2021-09-24</time>
+              <time title="创建时间：2021-10-19 20:47:42 / 修改时间：21:49:18" itemprop="dateCreated datePublished" datetime="2021-10-19T20:47:42+08:00">2021-10-19</time>
             </span>
 
           
@@ -203,15 +206,37 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <center>"Hello World"</center>
+        <h1 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h1><h2 id="1-盒子模型介绍"><a href="#1-盒子模型介绍" class="headerlink" title="1. 盒子模型介绍"></a>1. 盒子模型介绍</h2><blockquote>
+<p>所谓的盒子模型，就是把HTML页面的元素看做一个矩形的盒子，矩形盒子是由内容（content）、内边距（padding）、边框（border）、外边距（margin）四个部分组成。</p>
+</blockquote>
+<p><strong>盒子模型示意图如下</strong>：</p>
+<p><img src="/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20211019210649793.png"></p>
+<h2 id="2-相关样式属性"><a href="#2-相关样式属性" class="headerlink" title="2. 相关样式属性"></a>2. 相关样式属性</h2><ul>
+<li>盒子的内容宽度（width），注意不是盒子的宽度</li>
+<li>盒子的内容高度（height），注意不是盒子的高度</li>
+<li>盒子的边框（border）</li>
+<li>盒子内的内容和边框之间的间距（padding）</li>
+<li>盒子外边距（margin）</li>
+</ul>
+<h2 id="3-示例代码"><a href="#3-示例代码" class="headerlink" title="3. 示例代码"></a>3. 示例代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box1&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box2&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>​    这是我接触编程后第一个编写的程序，而今天我也第一次开通了博客，按照惯例，</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;Hello World&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span>&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: springgreen;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box2</span>&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>​    希望能通过这个博客记录自己学习的路程。</p>
-<p align="right">2021/9/24</p>
-
-<p><img src="/2021/09/24/HTML/%E5%88%9D%E8%A1%8C%E5%8D%9A%E5%AE%A2/hw.jpg" alt="hw"></p>
+<p><img src="/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20211019214637308.png" alt="image-20211019214637308"></p>
+<p>设定边框：</p>
+<blockquote>
+<p>border: 10px solid blueviolet;</p>
+</blockquote>
+<p><img src="/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20211019214727642.png" alt="image-20211019214727642"></p>
+<p>设定内边距：</p>
+<blockquote>
+<p>padding: 10px;</p>
+</blockquote>
+<p><img src="/2021/10/19/CSS/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20211019214824333.png" alt="image-20211019214824333"></p>
+<p>设定外边距：</p>
+<blockquote>
+<p>margin: 10px;</p>
+</blockquote>
 
     </div>
 
@@ -222,7 +247,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/%E9%9A%8F%E6%89%8B/" rel="tag"><i class="fa fa-tag"></i> 随手</a>
+              <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
           </div>
 
         
@@ -230,11 +255,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2021/09/24/HTML/HTML%E4%BB%8B%E7%BB%8D/" rel="next" title="HTML基础语法">
-      HTML基础语法 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/10/19/CSS/CSS%E6%98%BE%E7%A4%BA%E7%89%B9%E6%80%A7/" rel="prev" title="CSS显示特性">
+      <i class="fa fa-chevron-left"></i> CSS显示特性
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -293,6 +318,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">盒子模型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.1.</span> <span class="nav-text">1. 盒子模型介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E7%9B%B8%E5%85%B3%E6%A0%B7%E5%BC%8F%E5%B1%9E%E6%80%A7"><span class="nav-number">1.2.</span> <span class="nav-text">2. 相关样式属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81"><span class="nav-number">1.3.</span> <span class="nav-text">3. 示例代码</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
